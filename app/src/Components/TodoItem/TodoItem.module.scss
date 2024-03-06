@@ -1,0 +1,63 @@
+.input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+   
+   position: relative;
+    border: 1px solid #4EA8DE;
+    border-radius: 50%;
+  }
+  .input[type="checkbox"]::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    left: -1;
+    top: -1px;
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    background:url('../../assets/check.png');
+  }
+
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+    
+  }
+  input[type="checkbox"]:checked+label{
+    text-decoration: line-through;
+  }
+
+  .todoItem{
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+   
+    max-width: 738px;
+    width: 100%;
+    padding: 16px;
+    background-color: #262626;
+    border-radius: 8px;
+    padding-right: 52px;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .inputLabel{
+    font-size: 14px;
+    font-family: 'Inter';
+    font-weight: 400;
+    color:#bbbbbb;
+    margin-left: 20px;
+  }
+
+  .image{
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    width: 24px;
+    height: 24px;
+  }

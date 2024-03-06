@@ -1,0 +1,70 @@
+.InputBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 736px;
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    box-sizing: border-box;
+  flex-direction: column;
+  top: 170px;
+
+}
+.Wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 736px;
+    width: 100%;
+  
+
+}
+
+.input{ 
+    margin-left: 20px;
+    max-width: 638px;
+    width: 100%;
+    font-size: 14px;
+        font-family: 'Inter';
+        font-weight: 400;
+        color: #cbcbcb;
+    padding: 16px;
+    background-color: #262626;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin-right: 8px;
+
+    &::placeholder{
+        font-size: 14px;
+        font-family: 'Inter';
+        font-weight: 400;
+        color: #808080;
+
+    }
+}
+
+.button{
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    padding: 15px 0px;
+    background-color: #1E6F9F;
+    border: none;
+    width: 154px;
+    outline: none;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.error{
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(135, 14, 14);
+ margin-top: 5px;
+margin-left: 45px;
+    width: 100%;
+}

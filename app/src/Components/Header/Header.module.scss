@@ -1,0 +1,35 @@
+.header{
+    height: 200px;
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 0px 20px;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.headerName{
+    font-family: 'Inter';
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    padding-left: 40px;
+    color: #4ea8de;
+    span{
+        color:#5E60CE;
+    }
+
+    &::before{
+        position: absolute;
+       
+        width: 23px;
+        left: 0px;
+        height: 36px;
+        top: 10px;
+        content: '';
+        background: url('../../assets/rocket.png');
+    }
+}
